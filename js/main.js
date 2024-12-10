@@ -1,9 +1,11 @@
 // JS scripts placed here
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPage = window.location.pathname;
+  const menuLinks = document.querySelectorAll(".navbar a");
 
-$('.carousel').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-
+  menuLinks.forEach(link => {
+    if (link.href.includes(currentPage)) {
+      link.classList.add("active");
+    }
   });
+});

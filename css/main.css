@@ -1,8 +1,9 @@
 /* Place CSS styles here */
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    color: #fafbff;
+    padding: 20px;
+    font-family: "Dokdo", serif;
+    font-size: 2em;
     }
 .navbar ul {
     list-style-type: none;
@@ -17,8 +18,20 @@
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #e0e8ff;
     padding: 10px;
+    transition: color 0.3s;
+}
+
+
+.navbar a.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+.navbar a:hover {
+    color: #000000;
+    font-size: 1.0em;
 }
 
 /* For screens smaller than 768px */
@@ -37,12 +50,6 @@
     }
     
 
-.carousel {
-    width: 100%;
-    margin: 300px;
-
-}
-
 .backdrop {
     background-image: url(../img/Sign.jpg);
     width: 110%;
@@ -53,9 +60,23 @@
     display: flex;
     justify-content: center;
 }
-    .h1 {
+
+.homepage {
+    background-image: url(../img/Sign.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.h1 {
         font-family: "Dokdo", serif;
         font-weight: 400;
         font-style: normal;
+        color: saddlebrown;
+        font-size: 2em;
+        text-align: center;
+        position: fixed;
       }
       
+
+ 
