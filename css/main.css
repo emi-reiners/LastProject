@@ -409,3 +409,28 @@ input {
     transform: scale(1.1); 
     filter: brightness(1.01); 
 }
+/* Example for mobile screens */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    header {
+        text-align: center; /* Center header text */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        padding: 0;
+    }
+
+    .main-content {
+        padding: 20px; /* Add padding on mobile */
+    }
+
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+}
